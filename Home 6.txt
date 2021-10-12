@@ -1,0 +1,29 @@
+1. Task from the interview
+// FizzBazz
+// from 1 to 100
+// For every number that is divisible by 3 and 5, console log "FizzBuzz".
+// For every number that is divisible by only 3 and not 5, console.log "Fizz".
+// For every number that is divisible by only 5 and not 3, console .log "Buzz".
+
+const fizzBuzz = (num) => {
+
+ 
+  //if(num%3===0&&num%5===0)
+//    return('FizzBuzz')
+   if(num%3===0&&num%5!==0)
+   {return('Fizz');}
+   if(num%5===0&&num%3!==0)
+   {return('Buzz');}
+  else
+     { return('FizzBuzz')
+
+  }
+
+
+ 
+  }
+console.log(fizzBuzz(3));
+console.log(fizzBuzz(13));
+console.log(fizzBuzz(5));
+console.log(fizzBuzz(4));
+console.log(fizzBuzz(236));
