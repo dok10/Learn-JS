@@ -1,0 +1,105 @@
+// let a = "abc";
+// console.log(a.repeat(7));
+
+// for (let i = 1; i <= 5; i++) {
+//   console.log((i + "").repeat(i));
+// }
+// console.log('=================');
+// for (let i = 5; i >= 1; i--) {
+//   console.log((i + "").repeat(6 - i));
+// }
+
+//           i  repeat
+// "5"    6 - 5 = 1
+// "44"   6 - 4 = 2 
+// "333"   6 -3 = 3
+// "2222"  6 -2 = 4
+// "11111" 6 -1 = 5
+
+// 11111   6 - 1 = 5
+// 2222    6 - 2 = 4
+// 333
+// 44
+// 5
+// console.log('=================');
+
+// for (let i = 1; i <= 5; i++) {
+//   console.log((i + "").repeat(6 - i));
+// }
+
+// console.log('=================');
+
+// for (let i = 1; i <= 5; i++) {
+//   console.log(" ".repeat(5 - i) +(i + "").repeat(i));
+// }
+
+// "    1"  4
+// "   22"  3
+// "  333"  2
+// " 4444"  1
+// "55555"  0
+
+// 12345    i = 1
+// 1234     i = 2
+// 123      i = 3
+// 12       i = 4
+// 1        i = 5
+
+// for (let i = 1; i <= 5; i++) {
+//   let str = "";
+//   for (let j = 1; j <= 6 - i; j++) {
+//     str += j;    //12345
+//   }
+//   console.log(str);
+// }
+
+// 12345
+// 2345
+// 345
+// 45
+// 5
+
+// for (let i = 1; i <= 5; i++) {
+//    let str = "";
+//   for (let j = i; j <= 5; j++) {
+//     str += j;    //12345
+//   }
+//   console.log(str);
+// }
+
+1
+23
+456
+78910
+1112131415
+
+
+let number = 1;
+let str = "";
+
+for (let i = 1; i <= 5; i++) {
+//    let str = "";
+  for (let j = 1; j <= i; j++) {
+     str += number ;    //"1 "    // "2 3 "
+        number++;      //2  //3
+  }
+   console.log(" ".repeat(5 - i) + str);
+//   console.log(str);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
